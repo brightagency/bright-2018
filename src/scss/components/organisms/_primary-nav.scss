@@ -1,0 +1,25 @@
+.primary-nav {
+    padding: 50px 0;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 100px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__hamburger {
+        @include animatedHamburger($width: 35px, $height: 20px, $barHeight: 6px, $barColor: $colour_red, $duration: .4s, $rotation: 180deg, $rounded: false);
+        cursor: pointer;
+
+        & > *:nth-child(2) {
+            display: none;
+        }
+    }
+}

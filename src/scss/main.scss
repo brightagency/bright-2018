@@ -1,3 +1,5 @@
+@import '../../node_modules/sjd-scss/sjd-scss';
+
 @import 'core/normalize';
 @import 'core/global';
 @import 'core/mixins';
@@ -5,3 +7,9 @@
 @import 'core/grid';
 @import 'core/fonts';
 @import 'core/typography';
+
+@import 'components/organisms/primary-nav';
+
+body {
+    background-color: $colour_purple;
+}
