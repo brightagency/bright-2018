@@ -62,7 +62,7 @@ module.exports = {
 			{
 				port: devConfig.port,
 				proxy: devConfig.url,
-				files: ['**/*.css', '**/*.php'],
+				files: ['**/*.css', '**/*.php', '**/*.js'],
 				reloadDelay: 0
 			},
 			{

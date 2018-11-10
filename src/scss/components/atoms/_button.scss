@@ -10,4 +10,15 @@
         background-color: white;
         color: $colour_black;
     }
+
+    &--purple {
+        border: 0;
+        background-color: $colour_purple;
+        color: $colour_white;
+
+        &:hover {
+            background-color: lighten($colour_purple, 7%);
+            color: $colour_white;
+        }
+    }
 }

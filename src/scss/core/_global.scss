@@ -17,14 +17,6 @@ img {
     &--purple { color: $colour_purple; }
 }
 
-.bar {
-    width: 100%;
-    max-width: 250px;
-    height: 10px;
-    background-color: white;
-    margin: ($spacingUnit * 1.5) 0;
-
-    &--red {
-        background-color: $colour_red;
-    }
+.center {
+    text-align: center;
 }

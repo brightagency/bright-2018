@@ -34,10 +34,6 @@ xxlarge: 105rem);
     @include breakpoint(medium) {
         padding: 0 $grid_column_gutter;
     }
-
-    @include breakpoint(large) {
-        max-width: 1200px;
-    }
     
     @include breakpoint(xxlarge) {
         max-width: $grid_max_width;
