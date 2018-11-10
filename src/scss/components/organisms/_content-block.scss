@@ -21,6 +21,14 @@
         max-width: 250px;
     }
 
+    &__cta-container {
+        margin-top: $spacingUnit * 3;
+        
+        @include breakpoint(large) {
+            margin-top: $spacingUnit * 5;
+        }        
+    }
+
     &--bg-red {
         background-color: $colour_red;
     }

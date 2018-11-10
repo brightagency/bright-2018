@@ -1,0 +1,13 @@
+.button {
+    display: inline-block;
+    border: 3px solid $colour_white;
+    padding: 20px 45px;
+    transition: 0.3s ease all;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    &:hover {
+        background-color: white;
+        color: $colour_black;
+    }
+}
