@@ -23,6 +23,7 @@
     "browser-sync-webpack-plugin": "^2.2.2",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-webpack-plugin": "^2.3.0",
     "mini-css-extract-plugin": "^0.4.1",

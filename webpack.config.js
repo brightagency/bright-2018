@@ -42,6 +42,19 @@ module.exports = {
 					},
 					'sass-loader'
 				]
+			},
+			{
+				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'fonts/',
+							publicPath: `wp-content/themes/${devConfig.theme_slug}/dist/fonts`
+						}
+					}
+				]
 			}
 		]
 	},
@@ -60,6 +73,10 @@ module.exports = {
 			{
 				from: 'src/images/',
 				to: 'images'
+			},
+			{
+				from: 'src/videos/',
+				to: 'videos'
 			}
 		]),
 		new ImageminPlugin({
