@@ -1,0 +1,22 @@
+.service-icons {
+    display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+
+    & > * {
+        width: 50%;
+
+        @include breakpoint(medium) {
+            width: (100%) / 3;
+        }
+        
+        @include breakpoint(large) {
+            width: auto;
+        }
+    }
+
+    @include breakpoint(large) {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}

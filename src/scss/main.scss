@@ -12,7 +12,8 @@
 
 @import 'components/organisms/primary-nav';
 @import 'components/organisms/hero';
+@import 'components/organisms/content-block';
 
-body {
-    background-color: $colour_purple;
-}
+@import 'components/molecules/service-icons';
+@import 'components/molecules/service';
+

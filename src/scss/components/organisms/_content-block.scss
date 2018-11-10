@@ -1,0 +1,33 @@
+.content-block {
+
+    padding: 75px 0;
+
+    @include breakpoint(medium) {
+        padding: 100px 0;
+    }
+    
+    @include breakpoint(large) {
+        padding: 200px 0;
+    }
+
+    & > .container > .row > .columns {
+        & > *:not(:last-child) {
+            margin: 0 0 ($spacingUnit * 2.5);
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    &--bg-red {
+        background-color: $colour_red;
+    }
+
+    &--invert {
+        * {
+            color: white;
+        }
+    }
+}

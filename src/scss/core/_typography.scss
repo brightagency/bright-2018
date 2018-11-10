@@ -29,12 +29,23 @@ a {
     }
 }
 
+.section-title {
+    font-size: 80px;
+    font-weight: 900;
+}
+
 .subtitle {
     font-size: 18px;
     letter-spacing: -.1px;
-    font-weight: 700;
+    font-weight: 300;
+    line-height: 1.5;
+    
+    strong {
+        font-weight: 900;
+    }
 
     @include breakpoint(medium) {
         font-size: 22px;
     }
 }
+
