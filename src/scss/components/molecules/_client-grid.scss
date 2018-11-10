@@ -1,0 +1,44 @@
+.client-grid {
+    $gutter: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px (-$gutter);
+
+    @include breakpoint(large) {
+        margin: 0 (-$gutter);
+    }
+
+    & > * {
+        width: (100%)/3;
+        padding: 0 $gutter/2;
+        margin-bottom: $gutter;
+    }
+
+    &__logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: rgba(black, .5);
+        padding-bottom: 100%;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40%;
+            transform: translateY(-50%) translateX(-50%);
+
+            &[src*='nsw-government'] { transform: translateY(-50%) translateX(-50%) scale(1); }
+            &[src*='pam'] { transform: translateY(-50%) translateX(-50%) scale(1); }
+            &[src*='phn'] { transform: translateY(-50%) translateX(-50%) scale(1.5); }
+            &[src*='achieve'] { transform: translateY(-50%) translateX(-50%) scale(1.5); }
+            &[src*='tad'] { transform: translateY(-50%) translateX(-50%) scale(1.2); }
+            &[src*='ahr'] { transform: translateY(-50%) translateX(-50%) scale(1.7); }
+            &[src*='wwe'] { transform: translateY(-50%) translateX(-50%) scale(1.3); }
+            &[src*='wsu'] { transform: translateY(-50%) translateX(-50%) scale(1.7); }
+            &[src*='odm'] { transform: translateY(-50%) translateX(-50%) scale(1); }
+
+        }
+    }
+}

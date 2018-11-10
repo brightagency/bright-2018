@@ -49,3 +49,14 @@ a {
     }
 }
 
+.lead {
+    font-size: 21px;
+    letter-spacing: -.1px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    @include breakpoint(medium) {
+        font-size: 25px;
+    }
+}
+
