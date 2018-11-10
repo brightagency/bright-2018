@@ -115,7 +115,7 @@
             <div class="large-6 columns">
                 <h2 class="section-title">Proud to have worked with.</h2>
                 <p class="lead">We love partnering with organisations that are passionate about their purpose and take a forward-thinking approach to the impact they can have.</p>
-                <p class="content-block__cta-container"><a href="#" class="button">Our Services</a></p>
+                <p class="content-block__cta-container"><a href="#" class="button button--hover-red">Our Services</a></p>
             </div>
             <div class="large-6 columns">
                 <div class="client-grid">

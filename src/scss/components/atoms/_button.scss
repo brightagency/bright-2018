@@ -21,4 +21,10 @@
             color: $colour_white;
         }
     }
+
+    &--hover-red {
+        &:hover {
+            color: $colour_red;
+        }
+    }
 }
