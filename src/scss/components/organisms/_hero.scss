@@ -1,5 +1,7 @@
 .hero {
-
+    position: relative;
+    background-size: cover;
+    background-position: center;
     
     &--home {
         display: flex;
@@ -9,6 +11,25 @@
 
         height: 100vh;
         margin-top: -$nav_height;
-        // background-color: red;
+
+        .site-title {
+            color: $colour_white;
+            margin-bottom: $spacingUnit * 1.5;
+            
+            @include breakpoint(medium) {
+                margin-bottom: $spacingUnit * 3;
+            }
+        }
+
+        .subtitle {
+            color: $colour_white;
+        }
+
+        .video-container {
+            & + * {
+                position: relative;
+                z-index: 1;
+            }
+        }
     }
 }

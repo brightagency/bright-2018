@@ -32,7 +32,7 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				use: [
-					devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+					MiniCssExtractPlugin.loader,
 					'css-loader',
 					{
 						loader: 'postcss-loader',
@@ -50,8 +50,7 @@ module.exports = {
 						loader: 'file-loader',
 						options: {
 							name: '[name].[ext]',
-							outputPath: 'fonts/',
-							publicPath: `wp-content/themes/${devConfig.theme_slug}/dist/fonts`
+							outputPath: 'fonts/'
 						}
 					}
 				]
@@ -59,12 +58,17 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new BrowserSyncPlugin({
-			port: devConfig.port,
-			proxy: devConfig.url,
-			files: ['**/*.php'],
-			reloadDelay: 0
-		}),
+		new BrowserSyncPlugin(
+			{
+				port: devConfig.port,
+				proxy: devConfig.url,
+				files: ['**/*.css', '**/*.php'],
+				reloadDelay: 0
+			},
+			{
+				reload: false
+			}
+		),
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
 			chunkFilename: '[id].css'

@@ -15,5 +15,26 @@ a {
 }
 
 .site-title {
-    font-size: 140px;   
+    font-size: 60px;   
+    letter-spacing: -3px;
+    font-weight: 900;
+    line-height: .9;
+
+    @include breakpoint(medium) {
+        font-size: 100px;
+    }
+
+    @include breakpoint(large) {
+        font-size: 140px;
+    }
+}
+
+.subtitle {
+    font-size: 18px;
+    letter-spacing: -.1px;
+    font-weight: 700;
+
+    @include breakpoint(medium) {
+        font-size: 22px;
+    }
 }

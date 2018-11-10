@@ -4,7 +4,6 @@ class Nav {
 	constructor(el) {
 		this.el = el;
 		this.attachHandlers();
-		console.log(this);
 	}
 
 	attachHandlers = () => {

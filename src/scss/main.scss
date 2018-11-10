@@ -1,12 +1,14 @@
 @import '../../node_modules/sjd-scss/sjd-scss';
 
+@import 'core/variables';
 @import 'core/normalize';
 @import 'core/global';
 @import 'core/mixins';
-@import 'core/variables';
 @import 'core/grid';
 @import 'core/fonts';
 @import 'core/typography';
+
+@import 'components/sjd-video-bg';
 
 @import 'components/organisms/primary-nav';
 @import 'components/organisms/hero';
