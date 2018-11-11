@@ -14,7 +14,6 @@ class SJDVideoBG {
 		this.videoSrc = this.el.dataset.sjdvSrc;
 		this.setup();
 		this.style();
-		console.log(this);
 	}
 
 	setup = () => {

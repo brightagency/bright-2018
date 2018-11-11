@@ -1,5 +1,8 @@
 .content-block {
 
+    background-color: $colour_white;
+    background-size: cover;
+    background-position: center;
     padding: 75px 0;
 
     @include breakpoint(medium) {

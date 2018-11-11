@@ -1,0 +1,37 @@
+.primary-footer {
+    padding: $spacingUnit 0;
+    background-color: $colour_purple;
+    
+    @include breakpoint(medium) {
+        padding: $spacingUnit * 2 0;
+    }
+
+    * {
+        color: $colour_white;
+    }
+
+    p {
+        margin: $spacingUnit 0;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 1.5;
+
+        strong {
+            font-weight: 700;
+        }
+
+        a {
+            transition: 0.3s ease all;
+
+            &:hover {
+                color: $colour_red;
+            }
+        }
+    }
+
+    .column-2 {
+        @include breakpoint(medium) {
+            text-align: right;
+        }
+    }
+}

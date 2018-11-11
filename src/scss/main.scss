@@ -11,6 +11,7 @@
 @import 'components/organisms/primary-nav';
 @import 'components/organisms/hero';
 @import 'components/organisms/content-block';
+@import 'components/organisms/primary-footer';
 
 @import 'components/molecules/service-icons';
 @import 'components/molecules/service';
@@ -20,3 +21,6 @@
 @import 'components/atoms/button';
 @import 'components/atoms/bar';
 
+body {
+    background-color: $colour_purple;
+}
