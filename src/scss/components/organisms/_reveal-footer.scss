@@ -1,0 +1,37 @@
+.reveal-footer {
+    position: relative;
+    background-color: $colour_white;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .container {
+        position: relative;
+
+        padding-top: 75px;
+        padding-bottom: 75px;
+
+        @include breakpoint(medium) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        @include breakpoint(large) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+    }
+
+    &__logo {
+        width: 100px;
+        margin-top: $spacingUnit * 2;
+        
+        @include breakpoint(medium) {
+            width: 150px;
+            position: absolute;
+            bottom: $spacingUnit * 2;
+            right: 0;
+        }
+    }
+}

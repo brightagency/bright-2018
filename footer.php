@@ -34,6 +34,13 @@
                 </p>
             </div>
         </div>
+        <div class="row reveal-footer__logo-row">
+            <div class="columns">
+                <div class="reveal-footer__logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logos/bright-logo.svg" alt="Bright Logo">
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
