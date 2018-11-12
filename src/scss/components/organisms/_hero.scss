@@ -2,6 +2,41 @@
     position: relative;
     background-size: cover;
     background-position: center;
+
+    .hero__scroll {
+        position: absolute;
+        bottom: $grid_column_gutter;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        
+        &-inner {
+            margin: 0 auto;
+            width: 100%;
+            max-width: $grid_max_width;
+            padding: 0 $grid_column_gutter;
+            text-align: right;
+        }
+
+        &__text {
+            display: inline-block;
+            position: relative;
+            color: $colour_white;
+            font-size: 16px;
+            font-weight: 700;
+
+            &::after {
+                position: absolute;
+                left: 50%;
+                top: calc(100% + 13px);
+                width: 2px;
+                height: calc(100% + 13px);
+                background-color: $colour_white;
+                transform: translateX(-50%);
+                content: '';
+            }
+        }
+    }    
     
     &--home {
         display: flex;
@@ -36,4 +71,6 @@
             }
         }
     }
+
+    
 }
