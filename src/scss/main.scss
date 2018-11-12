@@ -13,6 +13,8 @@
 @import 'components/organisms/content-block';
 @import 'components/organisms/primary-footer';
 @import 'components/organisms/reveal-footer';
+@import 'components/organisms/nav-takeover';
+@import 'components/organisms/nav-overlay';
 
 @import 'components/molecules/service-icons';
 @import 'components/molecules/service';
@@ -24,4 +26,6 @@
 
 body {
     background-color: $colour_purple;
+    position: relative;
+    overflow: hidden;
 }

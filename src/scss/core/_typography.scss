@@ -30,9 +30,13 @@ a {
 }
 
 .section-title {
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 900;
     line-height: .9;
+
+    @include breakpoint(medium) {
+        font-size: 80px;
+    }
 }
 
 .subtitle {

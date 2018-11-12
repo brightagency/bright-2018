@@ -1,5 +1,5 @@
 <section 
-    class="hero hero--home" 
+    class="hero hero--home full-height" 
     style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/hero-home-bg.jpg)" 
     data-sjdv-src="<?php echo get_template_directory_uri(); ?>/dist/videos/bright-intro-overlay.mp4" 
     data-sjdv-poster="">

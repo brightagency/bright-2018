@@ -29,3 +29,21 @@
         </div>
     </div>
 </nav>
+
+<!-- <div class="nav-overlay"></div> -->
+
+<div class="nav-takeover">
+    <div class="container">
+        <div class="row">
+            <div class="columns">
+                <div class="bar bar--red"></div>
+                <div class="nav-takeover__items">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Our Work</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
