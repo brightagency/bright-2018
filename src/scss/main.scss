@@ -1,4 +1,6 @@
 @import '../../node_modules/sjd-scss/sjd-scss';
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 
 @import 'core/variables';
 @import 'core/normalize';
@@ -20,6 +22,7 @@
 @import 'components/molecules/service';
 @import 'components/molecules/work-card';
 @import 'components/molecules/client-grid';
+@import 'components/molecules/process-slider';
 
 @import 'components/atoms/button';
 @import 'components/atoms/bar';

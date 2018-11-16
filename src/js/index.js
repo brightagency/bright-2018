@@ -1,3 +1,5 @@
+import '../scss/main.scss';
+
 import '@babel/polyfill';
 import 'objectFitPolyfill';
 
@@ -8,3 +10,4 @@ import './components/WorkCard';
 import './components/FooterReveal';
 import './components/NavTakeover';
 import './components/FullHeight';
+import './components/Sliders';

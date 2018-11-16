@@ -12,4 +12,32 @@
     </div>
 </section>
 
+<div class="content-block content-block--bg-red content-block--invert">
+    <div class="container">
+        <div class="row">
+            <div class="medium-5 columns">
+                <h2 class="section-title">The Process.</h2>
+                <p class="lead">We are extremely proud of the long-lasting relationships we have built and continue to build with our clients. We see every project as an opportunity to enhance those relationships.</p>
+                <div class="bar bar--white"></div>
+            </div>
+            <div class="medium-6 medium-offset-1 columns">
+                <div class="process-slider owl-carousel owl-theme">
+                    <?php $data = get_field('our_process', 378); ?>
+                    <?php $process_steps = $data['process_steps']; ?>
+                    <?php foreach ($process_steps as $index => $process_step): ?>
+                        <div class="process-slider__slide">
+                            <h4 class="process-slider__title">
+                                <?php echo $index + 1; ?>. <?php echo $process_step['title'] ?>
+                            </h4>
+                            <p>
+                                <?php echo $process_step['content']; ?>
+                            </p>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php get_footer(); ?>

@@ -1,0 +1,57 @@
+.process-slider {
+    &__title {
+        font-weight: bold;
+        margin-bottom: $spacingUnit;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .owl-dots {
+        margin-top: $spacingUnit * 2;
+        text-align: left;
+
+        .owl-dot {
+            span {
+                background-color: $colour_white;
+                opacity: .3;
+                &:hover {
+                    background-color: $colour_white;
+                    opacity: .65;
+                }
+            }
+            &.active span {
+                background-color: $colour_white;
+                opacity: 1;
+            }
+        }
+    }
+
+    .owl-nav {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        justify-content: flex-end;
+        width: 100%;
+
+        .owl-prev,
+        .owl-next {
+            $size: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: $size;
+            height: $size;
+            border-radius: $size / 2;
+            background-color: $colour_white !important;
+
+            * {
+                color: $colour_red;
+            }
+        }                
+    }
+}
