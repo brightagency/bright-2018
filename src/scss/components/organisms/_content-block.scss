@@ -49,6 +49,10 @@
         background-color: $colour_red;
     }
 
+    &--bg-purple {
+        background-color: $colour_purple;
+    }
+
     &--invert {
         * {
             color: $colour_white;
@@ -84,5 +88,9 @@
             position: relative;
             z-index: 1;
         }
+    }
+
+    &--zero-top {
+        padding-top: 0;
     }
 }

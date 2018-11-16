@@ -12,6 +12,7 @@
     </div>
 </section>
 
+<?php $data = get_field('our_process', 378); ?>
 <div class="content-block content-block--bg-red content-block--invert">
     <div class="container">
         <div class="row">
@@ -22,7 +23,6 @@
             </div>
             <div class="medium-5 medium-offset-1 columns">
                 <div class="process-slider owl-carousel owl-theme">
-                    <?php $data = get_field('our_process', 378); ?>
                     <?php $process_steps = $data['process_steps']; ?>
                     <?php foreach ($process_steps as $index => $process_step): ?>
                         <div class="process-slider__slide">
