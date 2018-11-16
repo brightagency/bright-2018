@@ -75,7 +75,7 @@
     &--page {
         margin-top: -$nav_height;
         background-color: $colour_purple;
-        padding: 75px 0;
+        padding: 100px 0 75px;
 
         @include breakpoint(medium) {
             padding: 100px 0;

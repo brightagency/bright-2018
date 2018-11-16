@@ -1,3 +1,5 @@
+<?php global $featured_work_count ?>
+<?php $featured_work_count = $featured_work_count ?? 6; ?>
 <section class="content-block content-block--text-purple content-block--split-bg">
     <div class="container">
         <div class="row">
@@ -16,7 +18,7 @@
 
                     <?php $loop = new WP_Query(array( 
                         "post_type" => 'case-study',
-                        "posts_per_page" => 6,
+                        "posts_per_page" => $featured_work_count,
                         'order' => 'ASC',
                         'orderby' => 'menu_order'
                     )); ?>
