@@ -61,6 +61,12 @@
         }
     }
 
+    &--text-red {
+        * {
+            color: $colour_red;
+        }
+    }
+
     &--split-bg {
         position: relative;
 

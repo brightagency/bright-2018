@@ -5,12 +5,16 @@
     justify-content: center;
     text-align: center;
     margin-bottom: $spacingUnit * 3;
+    
+    @include breakpoint(large) {
+        margin-bottom: 0;
+    }
 
     &__icon {
         height: 120px;
         margin-bottom: $spacingUnit;
 
-        img {
+        img, svg {
             height: 100%;
         }
     }
@@ -18,5 +22,13 @@
     &__title {
         font-size: 24px;
         font-weight: 700;
+    }
+
+    .red-service-icons & {
+        svg {
+            * {
+                stroke: red;
+            }
+        }
     }
 }

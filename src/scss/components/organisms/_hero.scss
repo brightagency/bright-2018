@@ -72,5 +72,35 @@
         }
     }
 
+    &--page {
+        margin-top: -$nav_height;
+        background-color: $colour_purple;
+        padding: 75px 0;
+
+        @include breakpoint(medium) {
+            padding: 100px 0;
+        }
+        
+        @include breakpoint(large) {
+            padding: 200px 0;
+        }
+
+        .site-title {
+            color: $colour_white;
+            margin-bottom: $spacingUnit * 1.5;
+            
+            @include breakpoint(medium) {
+                margin-bottom: $spacingUnit * 3;
+            }
+        }
+
+        .subtitle {
+            color: $colour_white;
+
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
     
 }
