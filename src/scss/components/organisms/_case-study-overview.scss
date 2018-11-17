@@ -1,0 +1,29 @@
+%padded {
+    padding: $spacingUnit * 2 0;
+    
+    @include breakpoint(medium) {
+        padding: $spacingUnit * 3 0;
+    }
+
+    @include breakpoint(large) {
+        padding: $spacingUnit * 3.5 0;
+    }
+}
+
+.case-study-overview {
+    @extend %padded;
+
+    background-color: $colour_white;
+    text-align: center;
+    
+    .title {
+        @include baseHeadingFontSize(2rem);
+        margin-bottom: $spacingUnit;
+        color: $colour_purple;
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 2;
+    }
+}

@@ -102,5 +102,37 @@
             }
         }
     }
-    
+
+    &--case-study {
+        margin-top: -$nav_height;
+        background-color: $colour_purple;
+        padding: 100px 0 75px;
+        color: $colour_white;
+
+        @include breakpoint(medium) {
+            padding: 100px 0;
+        }
+        
+        @include breakpoint(large) {
+            padding: 150px 0;
+        }
+
+        .industry {
+            margin-bottom: $spacingUnit;
+        }
+
+        .site-title {
+            font-size: 28px;
+            letter-spacing: 0;
+            
+            @include breakpoint(medium) {
+                font-size: 40px;
+            }
+            
+            @include breakpoint(large) {
+                font-size: 60px;
+            }
+        }
+    }
+   
 }

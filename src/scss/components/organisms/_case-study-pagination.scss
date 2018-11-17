@@ -1,0 +1,84 @@
+.case-study-pagination {
+    padding: ($spacingUnit * 2) 0;
+    background-color: $colour_white;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .pagination-grid {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+
+        @include breakpoint(medium) {
+            justify-items: initial;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .all-work {
+
+            margin-bottom: 10px;
+
+            @include breakpoint(medium) {
+                margin-bottom: 0;
+            }
+
+            a {
+                @extend .button;
+                margin-bottom: 10px;
+
+                @include breakpoint(medium) {
+                    @include linkColor($colour_purple);
+                    margin-bottom: 0;
+                    padding: 0;
+                    background-color: transparent;
+                    color: $colour_purple !important;
+                    font-size: 2rem !important;
+                    font-weight: 900 !important;
+                    text-transform: none;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: lighten($colour_purple, 10%) !important;
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            display: grid;
+            align-items: center;
+            grid-gap: 5px;
+            grid-template-columns: auto auto 1fr;
+            
+            @include breakpoint(medium) {
+                grid-template-columns: 1fr auto auto;            
+                justify-items: end;
+            }
+
+            p {
+                padding-right: 10px;
+                color: $colour_purple;
+                font-weight: 700;
+            }
+
+            a {
+                $size: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: $size;
+                height: $size;
+                border-radius: $size / 2;
+                background-color: $colour_purple;
+                color: $colour_white;
+
+                &:hover {
+                    background-color: lighten($colour_purple, 5%);
+                }
+            }
+        }
+    }
+
+}
