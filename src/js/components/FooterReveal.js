@@ -13,7 +13,7 @@ class FooterReveal {
 		this.revealEl.style.left = '0';
 		this.revealEl.style.left = '0';
 		this.revealEl.style.width = '100%';
-		this.revealEl.style.zIndex = '-1';
+		this.revealEl.style.zIndex = '-101';
 	};
 
 	attachHandlers = () => {
@@ -26,8 +26,10 @@ class FooterReveal {
 	};
 }
 
-const revealEl = document.querySelector('footer.reveal-footer');
-const previousEl = document.querySelector('footer.primary-footer');
-if (revealEl && previousEl) {
-	new FooterReveal(revealEl, previousEl);
-}
+window.addEventListener('load', () => {
+	const revealEl = document.querySelector('footer.reveal-footer');
+	const previousEl = document.querySelector('footer.primary-footer');
+	if (revealEl && previousEl) {
+		new FooterReveal(revealEl, previousEl);
+	}
+});

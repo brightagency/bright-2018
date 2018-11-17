@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    height: auto !important;
+}
+
 *,
 *:before,
 *:after {
@@ -24,4 +28,20 @@ img {
 
 .row--cta {
     margin-top: $spacingUnit * 2;
+}
+
+
+// ANIMATIONS
+// ----------
+
+.hero .container .columns > *,
+.content-block:not(.reveal-footer) .columns > *,
+.service,
+.brief-us-in .container .columns,
+.work-card-wrap,
+.case-study-feature .columns,
+.case-study-overview .columns,
+.pagination-grid > *,
+.row-of-images p {
+    visibility: hidden
 }

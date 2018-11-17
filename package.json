@@ -41,6 +41,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "sass-loader": "^7.0.3",
+    "scrollreveal": "^4.0.5",
     "sjd-scss": "^1.0.2",
     "style-loader": "^0.23.1",
     "webpack": "^4.25.1",
