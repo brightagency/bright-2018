@@ -11,7 +11,7 @@ function sjd_scripts() {
     
     // SCRIPTS
     // Remove jquery
-    wp_deregister_script('jquery');
+    // wp_deregister_script('jquery');
 
     // User scripts    
     wp_enqueue_script(

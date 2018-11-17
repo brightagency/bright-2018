@@ -14,6 +14,7 @@
     }
 
     & > .container > .row > .columns {
+        
         & > *:not(:last-child) {
 
             margin: 0 0 ($spacingUnit * 1.5);
@@ -92,5 +93,11 @@
 
     &--zero-top {
         padding-top: 0;
+    }
+
+    &--pad-sm {
+        @include breakpoint(large) {
+            padding: 125px 0;
+        }       
     }
 }

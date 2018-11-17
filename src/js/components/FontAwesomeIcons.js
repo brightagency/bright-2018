@@ -10,8 +10,11 @@ import { faChevronRight, faChevronLeft } from '@fortawesome/pro-regular-svg-icon
 // Pro Light
 import { faTimes } from '@fortawesome/pro-light-svg-icons';
 
+// Brands
+import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 // Add to library
-library.add(faChevronRight, faChevronLeft, faTimes, faArrowRight);
+library.add(faChevronRight, faChevronLeft, faTimes, faArrowRight, faFacebookF, faInstagram, faYoutube);
 
 // Start watching the DOM
 dom.watch();

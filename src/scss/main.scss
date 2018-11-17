@@ -9,6 +9,8 @@
 @import 'core/grid';
 @import 'core/fonts';
 @import 'core/typography';
+@import 'core/rte';
+@import 'core/gravity';
 
 @import 'components/organisms/primary-nav';
 @import 'components/organisms/hero';
@@ -23,6 +25,7 @@
 @import 'components/molecules/work-card';
 @import 'components/molecules/client-grid';
 @import 'components/molecules/process-slider';
+@import 'components/molecules/social-links';
 
 @import 'components/atoms/button';
 @import 'components/atoms/bar';

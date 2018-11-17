@@ -11,3 +11,6 @@ import './components/FooterReveal';
 import './components/NavTakeover';
 import './components/FullHeight';
 import './components/Sliders';
+
+// window.jQuery = jQuery;
+// window.$ = jQuery;

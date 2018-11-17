@@ -1,0 +1,78 @@
+// General gravity styling
+.gform_wrapper {
+
+    font-family: $font_main !important;
+
+    .gfield {
+        margin: $spacingUnit 0 !important;
+
+        &:first-child {
+            margin-top: 0 !important;
+        }
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .gsection {
+        margin: 0 !important;
+
+        .gsection_title {
+            color: $colour_purple;
+            font-size: 1.25rem !important;
+            font-weight: bold;
+        }
+    }
+
+    .gform_button {
+        display: inline-block !important;
+        border: 3px solid $colour_white !important;
+        padding: 20px 45px !important;
+        transition: 0.3s ease all !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px !important;
+        background-color: $colour_purple !important;
+        color: $colour_white !important;
+        border-radius: 0 !important;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($colour_purple, 10%) !important;
+            color: $colour_white !important;
+        }
+    }
+
+    input {
+        margin: 0;
+
+        // Fixes vertical alignment for radio and checkboxes
+        vertical-align: 7.5% !important;
+
+        // Adds more space to radio and checkboxes
+        &[type='checkbox'],
+        &[type='radio'] {
+            margin-right: 2px !important;
+        }
+    }
+
+    input, textarea {
+        padding: 10px !important;
+        border-radius: 5px;
+        border: 1px solid hsl(0, 0, 75%);
+    }
+
+    .validation_error {
+        margin-bottom: 0 !important;
+        border: 0 !important;
+    }
+
+    .gfield_label {
+        margin-bottom: 7.5px;
+        color: $colour_purple;
+        font-size: rem-calc(14px) !important;
+    }
+
+    .ginput_container {
+        margin: 0 !important;
+    }
+}
