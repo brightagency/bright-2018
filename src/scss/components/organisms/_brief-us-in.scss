@@ -1,0 +1,80 @@
+.brief-us-in {
+    padding: 75px  0;
+    background-color: $colour_white;
+
+    .brief-us-in-cta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: $spacingUnit;
+        padding: 1.5rem;
+        border-radius: 5px;
+        background-color: hsl(0, 0, 95%);
+        font-weight: 700;
+        transition: 0.3s ease all;
+        
+        @include breakpoint(medium) {
+            padding: 2rem 2.5rem;
+        }
+
+        &:hover {
+            background-color: darken(hsl(0, 0, 95%), 5%);
+        }
+
+        p {
+            margin-bottom: 0;
+            color: $colour_purple;
+            font-size: 1.2rem;
+            line-height: 1.3;
+
+            @include breakpoint(medium) {
+                font-size: 1.4rem;
+                line-height: 1.6;                
+            }
+        }        
+
+        & > * {
+
+            width: 100%;
+            margin-bottom: 12px !important;
+            text-align: center;
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            @include breakpoint(medium) {
+                width: auto;
+                margin-bottom: 0 !important;
+                text-align: initial;
+            }
+        }
+
+        .button-plain {
+            @include linkColor($colour_purple);
+            font-size: 1.15rem;
+            
+            @include breakpoint(medium) {
+                font-size: 1.25rem;
+            }
+
+            .svg-inline--fa {
+                animation: bounceLeftAndRight ease 1s infinite;
+            }
+        }
+
+    }
+}
+
+@keyframes bounceLeftAndRight {
+    0% {
+        transform: translateX(25%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}

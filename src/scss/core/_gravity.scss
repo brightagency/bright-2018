@@ -76,3 +76,80 @@
         margin: 0 !important;
     }
 }
+
+// Brief us in form
+
+#gform_confirmation_message_3 {
+    margin-bottom: $spacingUnit !important;
+    font-size: 1.125rem;
+
+    @include breakpoint(medium) {
+        padding: 3rem 0;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+#gform_wrapper_3 {
+
+    .gsection {
+        
+        margin-top: $spacingUnit * 2 !important;
+        border-bottom: 0;
+        
+        @include breakpoint(medium) {
+            margin-top: 60px !important;
+        }
+
+        &:first-child { margin-top: 0 !important; }
+ 
+        .gsection_title {
+            font-size: 1.5rem !important;
+            letter-spacing: -1px !important;
+            
+            @include breakpoint(medium) {
+                font-size: 2rem !important;
+            }
+        }
+    }
+
+    .gfield_label {
+        display: none;
+    }
+
+    .gfield_radio,
+    .gfield_checkbox {
+        
+        @include breakpoint(medium) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 15px;
+        }
+        
+        label {
+            font-weight: 400 !important;
+        }
+    }
+
+    input {
+        vertical-align: -5% !important;        
+    }
+
+    .gfield {
+        padding-right: 0;
+    }
+
+    .ginput_container_fileupload {
+
+        input {
+            &[type='file'] {
+                display: block;
+                width: 100%;
+                padding: 2rem !important;
+                border: 1px solid hsl(0, 0, 80%);
+            }
+        }
+    }
+
+}
