@@ -12,13 +12,17 @@
     </div>
 </section>
 
-<?php $data = get_field('our_process', 378); ?>
+<?php $data = get_field('the_process')[0]; ?>
 <div class="content-block content-block--bg-red content-block--invert">
     <div class="container">
         <div class="row">
             <div class="medium-6 columns">
-                <h2 class="section-title">The Process.</h2>
-                <p class="lead">We are extremely proud of the long-lasting relationships we have built and continue to build with our clients. We see every project as an opportunity to enhance those relationships.</p>
+                <h2 class="section-title">
+                    <?php echo $data['title'] ?>
+                </h2>
+                <div class="lead">
+                    <?php echo $data['description'] ?>
+                </div>
                 <div class="bar bar--white"></div>
             </div>
             <div class="medium-5 medium-offset-1 columns">
@@ -40,7 +44,6 @@
     </div>
 </div>
 
-<?php $featured_work_count = 3; ?>
 <?php get_template_part('parts/organisms/content-block--featured-work'); ?>
 
 <?php get_template_part('parts/organisms/content-block--clients'); ?>

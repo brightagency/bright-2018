@@ -89,7 +89,7 @@ function add_post_types() {
         'public' => true,
         'menu_icon' => 'dashicons-admin-page',
         'supports' => array( 'title', 'editor', 'thumbnail' ),
-        'has_archive' => "our-work",
+        'has_archive' => "case-studies",
         'hierarchical' => false
     );
     register_post_type( 'case-study', $args );

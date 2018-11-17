@@ -76,6 +76,7 @@
         margin-top: -$nav_height;
         background-color: $colour_purple;
         padding: 100px 0 75px;
+        color: $colour_white;
 
         @include breakpoint(medium) {
             padding: 100px 0;
@@ -96,7 +97,10 @@
 
         .subtitle {
             color: $colour_white;
-
+            
+            p {
+                color: $colour_white;
+            }
             strong {
                 font-weight: 700;
             }
@@ -106,8 +110,8 @@
     &--case-study {
         margin-top: -$nav_height;
         background-color: $colour_purple;
-        padding: 100px 0 75px;
         color: $colour_white;
+        padding: 100px 0 75px;
 
         @include breakpoint(medium) {
             padding: 100px 0;

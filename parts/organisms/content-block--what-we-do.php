@@ -1,4 +1,9 @@
-<?php $data = get_field('what_we_do'); ?>
+<?php 
+$data = get_field('what_we_do')[0]; 
+if (!$data) {
+    $data = get_field('what_we_do', get_option('page_on_front'))[0];
+}
+ ?>
 
 <section class="content-block content-block--bg-red content-block--invert">
     <div class="container">

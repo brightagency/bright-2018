@@ -1,7 +1,9 @@
-<?php global $featured_work_count ?>
-
-<?php $featured_work_count = $featured_work_count ?? 6; ?>
-<?php $data = get_field('featured_work'); ?>
+<?php 
+$data = get_field('featured_work')[0]; 
+if (!$data) {
+    $data = get_field('featured_work', get_option('page_on_front'))[0];
+}
+ ?>
 
 <section class="content-block content-block--text-purple content-block--split-bg">
     <div class="container">
@@ -19,7 +21,7 @@
                 <div class="work-cards">
                     <?php $loop = new WP_Query(array( 
                         "post_type" => 'case-study',
-                        "posts_per_page" => $featured_work_count,
+                        "posts_per_page" => $data['featured_count'],
                         'order' => 'ASC',
                         'orderby' => 'menu_order'
                     )); ?>
@@ -35,7 +37,7 @@
         <div class="row row--cta">
             <div class="columns">
                 <p class="center">
-                    <?php $button = $data['button']; ?>
+                    <?php $button = $data['button'][0]; ?>
                     <a href="<?php echo $button['link'] ?>" class="button button--purple" target="<?php echo $button['new_tab'] ? '_blank' : '_self' ?>">
                         <?php echo $button['title'] ?>
                     </a>
