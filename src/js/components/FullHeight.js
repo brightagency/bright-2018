@@ -1,7 +1,6 @@
 class FullHeight {
 	constructor(el) {
 		this.el = el;
-		console.log(this);
 		this.handleResize();
 		this.attachHandlers();
 	}
@@ -11,7 +10,6 @@ class FullHeight {
 	};
 
 	handleResize = () => {
-		console.log('Setting height', this.el);
 		this.el.style.height = `${window.innerHeight}px`;
 	};
 }

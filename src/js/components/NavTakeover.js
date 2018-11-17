@@ -6,7 +6,6 @@ class NavTakeover {
 		this.takeover = takeover;
 		this.isOpen = false;
 		this.attachHandlers();
-		console.log(this);
 	}
 
 	attachHandlers = () => {
