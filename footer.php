@@ -16,7 +16,7 @@
                     Sydney NSW 2000
                 </p>
                 <p>
-                    <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | Bright Agency &copy; <?php echo Date('Y'); ?>
+                    <a href="<?php the_permalink(406); ?>">Privacy Policy</a> | <a href="<?php the_permalink(410); ?>">Terms & Conditions</a> | Bright Agency &copy; <?php echo Date('Y'); ?>
                 </p>
             </div>
         </div>
@@ -30,7 +30,7 @@
                 <h2 class="section-title">Say hello.</h2>
                 <p class="lead">Got a project you'd like to chat about? Get in touch. We'd love to hear from you.</p>
                 <p class="">
-                    <a href="#" class="button">Contact us</a>
+                    <a href="<?php the_permalink(131); ?>" class="button">Contact us</a>
                 </p>
             </div>
         </div>

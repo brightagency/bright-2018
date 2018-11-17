@@ -1,14 +1,14 @@
 .rte {
 
     h1, h2, h3, h4, h5, h6 {
-        margin: 0 0 $spacingUnit / 3;
+        margin: 0 0 $spacingUnit / 2;
         color: $colour_purple;
         line-height: 1.2;
     }
 
     p {
-        margin: 0 0 $spacingUnit;
-        line-height: 1.6;
+        margin: 0 0 $spacingUnit * 1.5;
+        line-height: 1.8;
         color: $colour_text;
     }
 
