@@ -3,3 +3,15 @@
         @content;
     }
 }
+
+%padded {
+    padding: $spacingUnit * 2 0;
+    
+    @include breakpoint(medium) {
+        padding: $spacingUnit * 3 0;
+    }
+
+    @include breakpoint(large) {
+        padding: $spacingUnit * 3.5 0;
+    }
+}

@@ -1,0 +1,187 @@
+.case-study-template-default {
+    background-color: $colour_white;
+}
+
+.module {
+
+    // General Module Styling
+    // ----------------------
+
+    @extend %padded;
+
+    background-color: $colour_white;
+
+
+    // Specific Module Styling
+    // -----------------------
+
+    &-error {
+        border-bottom: 1px solid $colour_white;
+        background-color: #f00;
+        color: $colour_white;
+        text-align: center;
+    }
+
+    &-image-area {
+        padding: 0;
+    }
+
+    // Image area after banner
+    &-banner + &-image-area {
+        @extend %padded;
+        padding-bottom: 0;
+    }
+
+    // Banner after image area 
+    &-image-area + &-banner {
+        position: relative;
+        margin-top: $spacingUnit * 3;
+    }
+
+    &-banner {
+        
+        @extend %coverImage;
+
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        background-color: transparent;
+        text-align: center;
+
+        @include breakpoint(medium) {
+            height: 350px;
+        }
+
+        @include breakpoint(large) {
+            height: 600px;
+        }
+
+        .link-container {
+            position: relative;
+            
+            & > a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+            }
+            
+            p {
+                display: none;
+                @include breakpoint(medium) {
+                    display: block;
+                }
+            }
+        }
+
+        svg {
+            height: 125px;
+            margin-bottom: 24px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        p {
+            a {
+                color: $colour_white;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+    &-text-content {
+
+    }
+
+    &-what-we-delivered {
+
+        text-align: center;        
+
+        .content {
+            .title {
+                @include baseHeadingFontSize(2rem);
+                margin-bottom: $spacingUnit;
+                color: $colour_purple;
+            }
+        }
+
+        .expertise-section {
+            
+            margin-bottom: $spacingUnit;
+            
+            h6 {
+                margin-top: $spacingUnit * 2;
+                margin-bottom: $spacingUnit * 2;
+                color: $colour_purple;
+            }
+
+            .expertise-grid {
+                
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: $spacingUnit;
+                
+                .expertise {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50%;
+                    margin-bottom: $spacingUnit;
+                    text-align: center;
+
+
+                    @include breakpoint(medium) {
+                        width: 25%;
+                        margin-bottom: 0;
+                    }
+
+                    .icon {
+
+                        $size: 100px;
+
+                        width: $size;
+                        height: $size;
+                        border-radius: 50%;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 1rem;
+                        background-color: $colour_purple;
+
+                        img {
+                            height: 50%;
+                            transform-origin: center;
+                            &[src*='branding'] { transform: scale(1); }
+                            &[src*='design'] { transform: scale(.95) translateY(-5%); }
+                            &[src*='digital'] { transform: scale(.8) translateY(-3%); }
+                            &[src*='media'] { transform: scale(.9) translateX(5%); }
+                        }
+                    }
+                    p {
+                        margin-bottom: 0;
+                        color: $colour_purple;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.module-banner,
+.module-error {
+    & + .case-study-pagination {
+        padding-top: 48px;
+    }
+}

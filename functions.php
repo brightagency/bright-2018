@@ -148,3 +148,29 @@ function add_taxonomies() {
     register_taxonomy( "expertise", array( "case-study" ), $args );
 }
 add_action( 'init', 'add_taxonomies' );
+
+/*
+|--------------------------------------------------------------------------
+| Shortcodes
+|--------------------------------------------------------------------------
+*/
+
+function row_of_images_shortcode($atts, $content) {
+
+    // Remove all tags except image tags
+    $content = strip_tags($content, '<img>');
+
+    // Wrap each image in p tags
+    $content = str_replace( '<img', '<p><img', $content );
+    $content = str_replace( '</img>', '</img></p>', $content );
+
+    ob_start();?>
+
+    <div class="row-of-images">
+        <?php echo $content; ?>
+    </div>
+
+    <? return ob_get_clean();
+}
+
+add_shortcode('row-of-images', 'row_of_images_shortcode');
