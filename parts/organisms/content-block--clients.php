@@ -1,10 +1,21 @@
+<?php $data = get_field('proud_to_have_worked_with'); ?>
+
 <section class="content-block content-block--invert content-block--bg-red">
     <div class="container">
         <div class="row">
             <div class="large-6 columns">
-                <h2 class="section-title">Proud to have worked with.</h2>
-                <p class="lead">We love partnering with organisations that are passionate about their purpose and take a forward-thinking approach to the impact they can have.</p>
-                <p class="content-block__cta-container"><a href="#" class="button button--hover-red">Our Services</a></p>
+                <h2 class="section-title">
+                    <?php echo $data['title']; ?>
+                </h2>
+                <div class="lead">
+                    <?php echo $data['description']; ?>
+                </div>
+                <p class="content-block__cta-container">
+                    <?php $button = $data['button']; ?>
+                    <a href="<?php echo $button['link'] ?>" class="button button--hover-red" target="<?php echo $button['new_tab'] ? '_blank' : '_self' ?>">
+                        <?php echo $button['title'] ?>
+                    </a>
+                </p>
             </div>
             <div class="large-6 columns">
                 <div class="client-grid">

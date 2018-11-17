@@ -1,13 +1,16 @@
 <?php global $featured_work_count ?>
+
 <?php $featured_work_count = $featured_work_count ?? 6; ?>
+<?php $data = get_field('featured_work'); ?>
+
 <section class="content-block content-block--text-purple content-block--split-bg">
     <div class="container">
         <div class="row">
             <div class="medium-8 columns">
-                <h2 class="section-title">Featured work.</h2>
-                <p class="subtitle">
-                    We build brands, design websites and produce visual media for produce visual media for produce <strong>visual media for</strong>.
-                </p>
+                <h2 class="section-title"><?php echo $data['title']; ?></h2>
+                <div class="subtitle">
+                    <?php echo $data['description']; ?>
+                </div>
                 <div class="bar bar--purple"></div>
             </div>
         </div>
@@ -25,13 +28,17 @@
                         <?php get_template_part('parts/molecules/work-card'); ?>
                     <?php endwhile; ?>
                     <?php endif; ?>
+                    <?php wp_reset_query(); ?>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row row--cta">
             <div class="columns">
                 <p class="center">
-                    <a href="#" class="button button--purple">View all Work</a>
+                    <?php $button = $data['button']; ?>
+                    <a href="<?php echo $button['link'] ?>" class="button button--purple" target="<?php echo $button['new_tab'] ? '_blank' : '_self' ?>">
+                        <?php echo $button['title'] ?>
+                    </a>
                 </p>
             </div>
         </div>
