@@ -109,13 +109,16 @@
                 margin-bottom: $spacingUnit;
                 color: $colour_purple;
             }
+            p {
+                line-height: 2;
+            }
         }
 
         .expertise-section {
             
             margin-bottom: $spacingUnit;
             
-            h6 {
+            h3 {
                 margin-top: $spacingUnit * 2;
                 margin-bottom: $spacingUnit * 2;
                 color: $colour_purple;
@@ -136,7 +139,6 @@
                     width: 50%;
                     margin-bottom: $spacingUnit;
                     text-align: center;
-
 
                     @include breakpoint(medium) {
                         width: 25%;

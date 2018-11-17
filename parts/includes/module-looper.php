@@ -16,9 +16,9 @@ if( have_rows('modules') ):
             // case 'text_content':
             //     get_template_part('parts/organisms/module--text-content');
             //     break;
-            // case 'what_we_delivered':
-            //     get_template_part('parts/organisms/module--what-we-delivered');
-            //     break;
+            case 'what_we_delivered':
+                get_template_part('parts/organisms/module--what-we-delivered');
+                break;
 
             default:
                 // echo get_row_layout();

@@ -25,9 +25,19 @@
     }
 
     .red-service-icons & {
+        color: $colour_red;
         svg {
             * {
-                stroke: red;
+                stroke: $colour_red;
+            }
+        }
+    }
+
+    .purple-service-icons & {
+        color: $colour_purple;
+        svg {
+            * {
+                stroke: $colour_purple;
             }
         }
     }
