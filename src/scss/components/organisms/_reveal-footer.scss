@@ -5,6 +5,12 @@
     background-position: center;
     padding-top: 0;
     padding-bottom: 0;
+    z-index: -101 !important;
+    transform: translateY(100%);
+    
+    &.visible {
+        transform: translateY(0);
+    }
 
     .container {
         position: relative;
