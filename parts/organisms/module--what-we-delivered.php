@@ -25,7 +25,7 @@
                     </div>
                     
                     */ ?>
-                    <div class="purple-service-icons">
+                    <div class="purple-service-icons smaller-service-icons">
                         <?php get_template_part('parts/molecules/service-icons'); ?>
                     </div>
                 </div>

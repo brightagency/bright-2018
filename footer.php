@@ -15,8 +15,8 @@
                     Level 13, 333 George St<br>
                     Sydney NSW 2000
                 </p>
-                <p>
-                    <a href="<?php the_permalink(406); ?>">Privacy Policy</a> | <a href="<?php the_permalink(410); ?>">Terms & Conditions</a> | Bright Agency &copy; <?php echo Date('Y'); ?>
+                <p class="small">
+                    <a href="<?php the_permalink(406); ?>">Privacy</a> | <a href="<?php the_permalink(410); ?>">Terms</a> | Bright Agency &copy; <?php echo Date('Y'); ?>
                 </p>
             </div>
         </div>

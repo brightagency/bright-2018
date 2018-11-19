@@ -25,12 +25,6 @@
             <div class="medium-5 large-4 columns">
                 <div class="rte">
                     <?php the_content(); ?>
-                    <div class="follow-us-social">
-                        <h2>Follow us</h2>
-                        <div class="social-links">
-                            <?php get_template_part('parts/molecules/social-links'); ?>
-                        </div>
-                    </div>    
                 </div>
             </div>
             <div class="medium-7 large-8 columns">

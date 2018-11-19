@@ -41,4 +41,14 @@
             }
         }
     }
+
+    .smaller-service-icons & {
+        .service__icon {
+            height: 80px;
+        }       
+        .service__title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
 }

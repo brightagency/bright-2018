@@ -27,6 +27,10 @@
                 color: $colour_red;
             }
         }
+
+        &.small {
+            font-size: 14px;
+        }
     }
 
     .column-2 {

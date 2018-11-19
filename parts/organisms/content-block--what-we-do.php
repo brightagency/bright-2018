@@ -8,12 +8,16 @@ if (!$data) {
 <section class="content-block content-block--bg-red content-block--invert" id="what-we-do">
     <div class="container">
         <div class="row">
-            <div class="columns">
+            <div class="medium-8 columns" style="margin-bottom: 24px;">
                 <h2 class="section-title"><?php echo $data['title'] ?></h2>
                 <div class="subtitle">
                     <?php echo $data['description']; ?>
                 </div>
                 <div class="bar bar--white"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns">
                 <?php get_template_part('parts/molecules/service-icons'); ?>
             </div>
         </div>
