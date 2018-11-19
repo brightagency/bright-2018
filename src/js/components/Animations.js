@@ -7,7 +7,7 @@ window.sr = ScrollReveal({
 	scale: 1,
 	distance: '50px',
 	easing: 'ease',
-	mobile: false
+	mobile: true
 });
 
 const staggerDuration = 150;

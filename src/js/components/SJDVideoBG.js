@@ -10,8 +10,17 @@ class SJDVideoBG {
 	constructor(el) {
 		this.el = el;
 		this.videoContainer = createElWithAttributes('div', { class: 'video-container' });
-		this.videoEl = createElWithAttributes('video', { class: 'video-element', autoplay: true, muted: true, loop: true });
 		this.videoSrc = this.el.dataset.sjdvSrc;
+		this.videoPoster = this.el.dataset.sjdvPoster;
+		this.videoEl = createElWithAttributes('video', {
+			class: 'video-element',
+			playsinline: '',
+			autoplay: '',
+			muted: '',
+			loop: '',
+			poster: this.videoPoster
+		});
+		this.videoEl.muted = true;
 		this.setup();
 		this.style();
 	}
