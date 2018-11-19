@@ -10,7 +10,7 @@
     height: 100%;
     background-color: $colour_purple;
     z-index: $z_nav_takeover;
-    transform: translateX(-100%);
+    // transform: translateX(-100%);
 
     &__items {
         display: flex;
@@ -94,7 +94,7 @@
                     opacity: 1;
                     @for $i from 1 through 10 {
                         &:nth-child(#{$i}) {
-                            transition-delay: ($i * .075s) + .4s;
+                            transition-delay: ($i * .075s) + .1s;
                         }
                     }
                 }
