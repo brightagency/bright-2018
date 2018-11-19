@@ -17,7 +17,7 @@
     <div class="hero__scroll">
         <div class="hero__scroll-inner">
             <div class="hero__scroll__text">
-                Scroll
+                <a href="#what-we-do">Scroll</a>
             </div>
         </div>
     </div>

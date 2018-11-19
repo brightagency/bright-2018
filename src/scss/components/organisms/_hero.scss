@@ -25,12 +25,21 @@
             font-size: 16px;
             font-weight: 700;
 
+            a {
+                color: $colour_white;
+                transition: 0.3s ease all;
+
+                @include hover {
+                    color: $colour_red;
+                }
+            }
+
             &::after {
                 position: absolute;
                 left: 50%;
-                top: calc(100% + 13px);
+                top: calc(100% + 14px);
                 width: 2px;
-                height: calc(100% + 13px);
+                height: calc(100% + 14px);
                 background-color: $colour_white;
                 transform: translateX(-50%);
                 content: '';

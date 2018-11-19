@@ -5,7 +5,7 @@ if (!$data) {
 }
  ?>
 
-<section class="content-block content-block--bg-red content-block--invert">
+<section class="content-block content-block--bg-red content-block--invert" id="what-we-do">
     <div class="container">
         <div class="row">
             <div class="columns">
