@@ -17,6 +17,10 @@ $colour_text: hsl(0, 0, 40%);
 
 // Z Indexes 
 // ---------
+$z_hero: -102;
+$z_nav: -101;
+$z_parallax_mirror: -100; // This is static - will not change
+$z_footer: -99;
 $z_nav_overlay: 98;
 $z_nav_takeover: 99;
-$z_nav: 100;
+$z_nav_active: 100;

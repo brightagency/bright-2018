@@ -24,11 +24,18 @@ const plugins = [scrollTo];
 window.addEventListener('load', () => {
 	const footer = document.querySelector('.primary-footer');
 	const revealFooter = document.querySelector('.reveal-footer');
+	const hero = document.querySelector('.hero--home');
 	const handleScroll = () => {
 		if (footer.getBoundingClientRect().top - window.innerHeight > 0) {
 			revealFooter.classList.remove('visible');
+			if (hero) {
+				hero.style.opacity = 1;
+			}
 		} else {
 			revealFooter.classList.add('visible');
+			if (hero) {
+				hero.style.opacity = 0;
+			}
 		}
 	};
 	handleScroll();

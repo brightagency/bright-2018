@@ -5,7 +5,12 @@ if (!$data) {
 }
  ?>
 
-<section class="content-block content-block--invert" style="background-image: url(<?php echo $data['background_image']; ?>)">
+<section 
+    class="content-block content-block--invert content-block--parallax" 
+    data-parallax="scroll" 
+    data-image-src="<?php echo $data['background_image']; ?>" 
+    data-speed="0.8"
+>
     <div class="container">
         <div class="row">
             <div class="medium-8 columns">

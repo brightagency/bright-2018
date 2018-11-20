@@ -13,7 +13,7 @@ class FooterReveal {
 		this.revealEl.style.left = '0';
 		this.revealEl.style.left = '0';
 		this.revealEl.style.width = '100%';
-		this.revealEl.style.zIndex = '-101';
+		// this.revealEl.style.zIndex = '-101';
 	};
 
 	attachHandlers = () => {

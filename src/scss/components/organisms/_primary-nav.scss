@@ -1,7 +1,10 @@
 $nav_height: 134px;
 
 .primary-nav {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 50px 0;
     z-index: $z_nav;
 
@@ -25,5 +28,14 @@ $nav_height: 134px;
         & > *:nth-child(2) {
             display: none;
         }
+    }
+
+    &.active {
+        z-index: $z_nav_active;
+    }
+
+    body:not(.home) & {
+        position: relative;
+        z-index: $z_nav_active;
     }
 }
