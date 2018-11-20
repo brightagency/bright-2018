@@ -1,0 +1,12 @@
+.dot {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 10px;
+    
+    &--red {
+        background-color: $colour_red;
+    }
+}

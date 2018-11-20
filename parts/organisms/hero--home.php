@@ -8,7 +8,7 @@
         <div class="row">
             <div class="medium-10 columns">
                 <div class="bar bar--red"></div>
-                <h1 class="site-title">Design for impact<span class="highlight highlight--red">.</span></h1>
+                <h1 class="site-title">Design for impact<span class="highlight highlight--red"><span class="dot dot--red"></span></span></h1>
                 <p class="subtitle"><strong>We're a design agency working with organisations that <span class="highlight highlight--red">make a difference</span></strong></p>
             </div>
         </div>
