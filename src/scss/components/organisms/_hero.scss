@@ -129,10 +129,10 @@
         margin-top: -$nav_height;
         background-color: $colour_purple;
         color: $colour_white;
-        padding: 120px 0 60px;
+        padding: 140px 0 60px;
 
         @include breakpoint(medium) {
-            padding: 120px 0 100px;
+            padding: 140px 0 100px;
         }
         
         @include breakpoint(large) {
