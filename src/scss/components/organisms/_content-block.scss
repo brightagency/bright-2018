@@ -8,8 +8,12 @@
     @include breakpoint(medium) {
         padding: 100px 0;
     }
-    
+
     @include breakpoint(large) {
+        padding: 150px 0;
+    }
+    
+    @include breakpoint(xxlarge) {
         padding: 200px 0;
     }
 
@@ -34,7 +38,7 @@
         margin-top: $spacingUnit * 3;
         
         @include breakpoint(large) {
-            margin-top: $spacingUnit * 5;
+            margin-top: $spacingUnit * 4;
         }        
     }
 
@@ -44,6 +48,10 @@
         @include breakpoint(large) {
             margin-top: $spacingUnit * 2;
         }        
+    }
+
+    .bar {
+        margin: 60px 0;
     }
 
     &--bg-red {
