@@ -17,8 +17,8 @@
                 </div>
 
                 <h1 class="site-title">
-                    <span class="highlight--red">Client:</span> <?php echo get_field('client_name'); ?><br>
-                    <span class="highlight--red">Project:</span> <?php echo get_field('project_description'); ?>
+                    <span><span class="highlight--red">Client:</span> <?php echo get_field('client_name'); ?></span>
+                    <span><span class="highlight--red">Project:</span> <?php echo get_field('project_description'); ?></span>
                 </h1>
 
             </div>

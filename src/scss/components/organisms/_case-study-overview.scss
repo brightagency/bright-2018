@@ -11,7 +11,10 @@
     }
 
     p {
-        font-size: 19px;
-        line-height: 2;
+        font-size: 16px;
+
+        @include breakpoint(medium) {
+            font-size: 19px;
+        }
     }
 }

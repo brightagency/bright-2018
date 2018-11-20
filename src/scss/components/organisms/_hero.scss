@@ -129,10 +129,10 @@
         margin-top: -$nav_height;
         background-color: $colour_purple;
         color: $colour_white;
-        padding: 100px 0 75px;
+        padding: 120px 0 60px;
 
         @include breakpoint(medium) {
-            padding: 100px 0;
+            padding: 120px 0 100px;
         }
         
         @include breakpoint(large) {
@@ -147,9 +147,17 @@
             font-size: 28px;
             letter-spacing: 0;
             line-height: 1.3;
+
+            > span {
+                display: block;
+                margin-bottom: $spacingUnit;
+            }
             
             @include breakpoint(medium) {
                 font-size: 35px;
+                > span {
+                    margin-bottom: 0;
+                }
             }
             
             @include breakpoint(large) {
