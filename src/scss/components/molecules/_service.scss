@@ -11,8 +11,12 @@
     }
 
     &__icon {
-        height: 120px;
+        height: 90px;
         margin-bottom: $spacingUnit;
+        
+        @include breakpoint(medium) {
+            height: 120px;
+        }
 
         img, svg {
             height: 100%;
