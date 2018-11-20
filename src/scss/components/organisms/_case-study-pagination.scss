@@ -26,14 +26,14 @@
 
             a {
                 @extend .button;
+                color: $colour_purple !important;
                 margin-bottom: 10px;
 
                 @include breakpoint(medium) {
                     @include linkColor($colour_purple);
                     margin-bottom: 0;
-                    padding: 0;
+                    padding: 0 !important;
                     background-color: transparent;
-                    color: $colour_purple !important;
                     font-size: 2rem !important;
                     font-weight: 900 !important;
                     text-transform: none;
