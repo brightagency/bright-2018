@@ -1,4 +1,10 @@
 // General gravity styling
+.gform_confirmation_message {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: hsl(0, 0%, 40%) !important;
+}
+
 .gform_wrapper {
 
     font-family: $font_main !important;

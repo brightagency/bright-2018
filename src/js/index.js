@@ -50,10 +50,12 @@ if (!Element.prototype.matches) {
 	Element.prototype.matches = Element.prototype.msMatchesSelector;
 }
 
-document.body.addEventListener('click', event => {
-	if (event.target.matches('a[href^="#"]')) {
-		event.preventDefault();
-		const { hash } = new URL(event.target.href);
-		TweenLite.to(window, 1, { scrollTo: hash, ease: Power2.easeInOut });
-	}
-});
+// document.body.addEventListener('click', event => {
+// 	if (event.target.matches('a[href^="#"]')) {
+// 		event.preventDefault();
+// 		const { hash } = new URL(event.target.href);
+// 		if (document.querySelector(hash)) {
+// 			TweenLite.to(window, 1, { scrollTo: hash, ease: Power2.easeInOut });
+// 		}
+// 	}
+// });

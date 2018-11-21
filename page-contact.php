@@ -28,7 +28,9 @@
                 </div>
             </div>
             <div class="medium-7 large-8 columns">
-            <?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true]'); ?>
+                <div class="rte">
+                    <?php echo do_shortcode('[gravityform id=1 title=false description=false]'); ?>
+                </div>
             </div>
         </div>
     </div>

@@ -6,7 +6,9 @@
     <div class="container">
         <div class="row align-center">
             <div class="medium-10 large-8 columns">
-                <?php the_content(); ?>
+                <div class="rte">
+                    <?php the_content(); ?>
+                </div>
             </div>
         </div>
     </div>
