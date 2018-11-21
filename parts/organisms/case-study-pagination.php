@@ -12,12 +12,12 @@
 
                         <p class="title">Next Project</p>
 
-                        <?php if ( get_next_post() ): ?>
-                            <a href="<?php the_permalink(get_next_post()); ?>"><i class="far fa-chevron-left"></i></a>
+                        <?php if ( get_adjacent_post(false, '', true) ): ?>
+                            <a href="<?php the_permalink(get_adjacent_post(false, '', true)); ?>"><i class="far fa-chevron-left"></i></a>
                         <?php endif; ?>
 
-                        <?php if ( get_previous_post() ): ?>
-                            <a href="<?php the_permalink(get_previous_post()); ?>"><i class="far fa-chevron-right"></i></a>
+                        <?php if ( get_adjacent_post(false, '', false) ): ?>
+                            <a href="<?php the_permalink(get_adjacent_post(false, '', false)); ?>"><i class="far fa-chevron-right"></i></a>
                         <?php endif; ?>
 
                     </div>
