@@ -10,23 +10,47 @@
 
                 <div class="expertise-section">
                     <h3>Expertise provided</h3>
-                    <?php /*
 
-                    <div class="expertise-grid">
-                        <?php $expertises = wp_get_post_terms( get_the_id(), 'expertise' ); ?>
-                        <?php foreach ($expertises as $expertise): ?>
-                            <div class="expertise">
-                                <div class="icon">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/icons/services/<?php echo $expertise->slug ?>.svg">
-                                </div>
-                                <p><?php echo $expertise->name; ?></p>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                    
-                    */ ?>
                     <div class="purple-service-icons smaller-service-icons">
-                        <?php get_template_part('parts/molecules/service-icons'); ?>
+                        <div class="service-icons">
+
+                            <?php $expertises = wp_get_post_terms( get_the_id(), 'expertise' ); ?>
+                            <?php foreach ($expertises as $expertise): ?>
+                                <div class="service">
+                                    <?php 
+                                        switch ($expertise->slug) {
+                                            case 'brand-identity':
+                                                $title = "Brand<br>Identity";
+                                                break;
+                                            case 'creative-direction':
+                                                $title = "Creative<br>Direction";
+                                                break;
+                                            case 'graphic-design':
+                                                $title = "Graphic<br>Design";
+                                                break;
+                                            case 'video-production':
+                                                $title = "Video<br>Production";
+                                                break;
+                                            case 'web-digital':
+                                                $title = "Web &amp;<br>Digital";
+                                                break;
+                                            default:
+                                                $title = false;
+                                                break;
+                                        }
+                                    ?> 
+                                    <?php if ($title): ?>
+                                        <?php $image_src = get_template_directory_uri() . '/dist/images/icons/' . $expertise->slug . '.svg'; ?>
+                                        <?php error_log($image_src) ?>
+                                        <div class="service__icon">
+                                            <img data-svg-inline src="<?php echo $image_src ?>" alt="<?php echo $title ?>">
+                                        </div>
+                                        <div class="service__title"><?php echo $title; ?></div>
+                                    <?php endif; ?>
+                                </div>
+                            <?php endforeach; ?>
+
+                        </div>
                     </div>
                 </div>
 

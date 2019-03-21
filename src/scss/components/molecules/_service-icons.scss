@@ -11,11 +11,12 @@
         
         @include breakpoint(large) {
             width: auto;
+            padding: 0 75px;
         }
     }
 
     @include breakpoint(large) {
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: nowrap;
     }
 }
